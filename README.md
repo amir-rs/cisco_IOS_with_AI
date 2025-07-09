@@ -1,6 +1,22 @@
 # Cisco OSI with AI Asset
 
-A web-based application that simulates a terminal environment and demonstrates the OSI model with AI-powered features. Built using Python and Flask, this project provides an interactive platform for learning and experimenting with networking concepts.
+## Overview
+
+This application is designed to help users understand and interact with the OSI (Open Systems Interconnection) model through a web-based terminal interface enhanced with AI features. Users can register, log in, and access a simulated terminal where they can enter networking commands. The AI component analyzes user commands, provides intelligent feedback, and helps users learn about the different layers of the OSI model in a practical, hands-on way.
+
+The application is ideal for students, educators, and networking professionals who want to:
+- Experiment with OSI model concepts in a safe environment
+- Receive AI-driven guidance and explanations
+- Visualize how data moves through OSI layers
+- Practice networking commands without needing a real network setup
+
+## How It Works
+
+1. **User Registration & Login:** Users create an account and log in to access the main features.
+2. **Simulated Terminal:** After logging in, users are presented with a web-based terminal where they can input networking-related commands.
+3. **Command Processing:** The application uses a command sanitizer to ensure all inputs are safe. Commands are then analyzed by the AI module, which provides feedback, explanations, or simulated results.
+4. **OSI Model Visualization:** The system demonstrates how each command relates to the OSI model, helping users understand which layer is involved and what happens at each step.
+5. **Session Management:** User sessions are securely managed, and all interactions are logged for review and learning purposes.
 
 ## Features
 
@@ -70,8 +86,7 @@ cicso OSI with AI asset/
 
 Below is a screenshot of the application in action:
 
-![Application Screenshot](screenshot.png)
-
+![Application Screenshot](Cisco%20IOS%20Command%20Guide.png)
 
 ## License
 
