@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Cisco IOS Command Guide</title>
+    <style>
+        body { background: #1a2332; color: #e0e6ed; font-family: 'Fira Mono', monospace; margin: 0; }
+        .profile-container { max-width: 400px; margin: 80px auto; background: #232d3a; border-radius: 10px; box-shadow: 0 4px 24px #0008; padding: 32px 24px; }
+        h2 { text-align: center; color: #4fc3f7; margin-bottom: 24px; }
+        .profile-info { color: #b0bec5; margin-bottom: 18px; }
+        .logout-btn { width: 100%; padding: 10px; background: #4fc3f7; color: #101624; border: none; border-radius: 5px; font-weight: bold; font-size: 1em; cursor: pointer; }
+        .logout-btn:hover { background: #0288d1; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <strong>Username:</strong> {{ username }}<br>
+            <strong>Member since:</strong> {{ member_since }}
+        </div>
+        <form method="post" action="/logout">
+            <button class="logout-btn" type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

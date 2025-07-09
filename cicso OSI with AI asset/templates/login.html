@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cisco IOS Command Guide</title>
+    <style>
+        body { background: #1a2332; color: #e0e6ed; font-family: 'Fira Mono', monospace; margin: 0; }
+        .login-container { max-width: 350px; margin: 80px auto; background: #232d3a; border-radius: 10px; box-shadow: 0 4px 24px #0008; padding: 32px 24px; }
+        h2 { text-align: center; color: #4fc3f7; margin-bottom: 24px; }
+        label { display: block; margin-bottom: 8px; color: #b0bec5; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; border-radius: 5px; border: none; background: #101624; color: #e0e6ed; margin-bottom: 18px; font-size: 1em; }
+        button { width: 100%; padding: 10px; background: #4fc3f7; color: #101624; border: none; border-radius: 5px; font-weight: bold; font-size: 1em; cursor: pointer; }
+        button:hover { background: #0288d1; color: #fff; }
+        .register-link { text-align: center; margin-top: 18px; color: #b0bec5; }
+        .register-link a { color: #4fc3f7; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="register-link">Don't have an account? <a href="/register">Register</a></div>
+    </div>
+</body>
+</html>
